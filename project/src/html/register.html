@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>飞虎乐购-在线销售IT、数码、手机，让你找得容易，买得放心！</title>
+    <link rel="shortcut icon" href="../css/favicon.ico" />
+    <link rel="stylesheet" href="../css/log_reg_common.css" />
+    <link rel="stylesheet" href="../css/register.css" />
+</head>
+<body>
+    <div id="header">
+        <div class="wrap">
+            <div class="left fl">您好,欢迎来到飞虎乐购!<a href="login.html">安全登录</a>还没加入我们？<a href="#">免费注册</a></div>
+            <div class="right fr">
+                <div class="adm fl menu" >
+                    <a href="#">我的账户</a>
+                    <i></i>
+                    <ul class="menuShow">
+                        <li><a href="#">我的账户</a></li>
+                        <li><a href="#">我的收藏</a></li>
+                        <li><a href="#">我的订单</a></li>
+                    </ul>
+                </div>
+                <div class="help fl">
+                    <a href="#">帮助中心</a>
+                    <span>|</span>
+                </div>
+                <div class="exp fl">
+                    <i></i>
+                    <a href="#">网站体验反馈</a>
+                </div>
+                <div class="tel fl"><i></i>400 833 6900</div>
+            </div>
+        </div>
+    </div>
+    <div id="content" class="wrap">
+        <h1>
+            <a href="../index.html"><img src="../css/img/login_logo.jpg" alt="" /></a>
+        </h1>
+        <form action="http://localhost:8080/html/login.html" name="register" method="get" id="register">
+            <h3 class="them f14">用户注册</h3>
+            <fieldset class="registry">
+                <h4>您尚未注册 ：<span>请填写注册信息，带有*号的为必填项</span></h4>
+                <div class="information">
+                    <span>*</span>用户名 ：<input type="text" name="username" class="sign" />
+                    <div class="tip"></div>
+                </div>
+                <div class="information">
+                    <span>*</span>密码 ：<input type="password" name="password" class="sign" />
+                    <div class="tip"></div>
+                </div>
+                <div class="information">
+                    <span>*</span>确认密码 ：<input type="password" name="conpassword" class="sign" />
+                    <div class="tip"></div>
+                </div>
+                <div class="information">
+                    <span>*</span>邮箱 ：<input type="email" name="email" class="sign" />
+                    <div class="tip"></div>
+                </div>
+                <div class="information">
+                    推荐人 ：<input type="text" name="reference" />
+                    <div class="tip"></div>
+                </div>
+                <div class="information">
+                    活动代码 ：<input type="text" name="activedemo" />
+                    <div class="tip"></div>
+                </div>
+                <div class="information">
+                    <span>*</span>验证码 ：<input type="text" name="vercode" class="sign" />
+                    <div class="tip"></div>
+                </div>
+                <div class="checkcode">
+                    <img src="http://passport.efeihu.com/CheckCode.aspx?r=0.7278593294531237" alt="验证码" />
+                    <a href="#" id="changecode">换张图</a>
+                </div>
+                <div class="agree">
+                    <input type="checkbox" name="xieyi" checked="checked" />我已经阅读并同意<a href="#">飞虎乐购用户协议</a>
+                </div>
+                <input type="submit" value="" class="sub" />
+            </fieldset>
+        </form>
+    </div>
+    <div id="footer" class="wrap">
+        <div>
+            <a class="first" href="#">常见问题</a>|<a href="#">法律说明</a>|<a href="#">联系我们</a>
+        </div>
+        <p>增值电信业务经营许可证 ：<a href="#">粤B2-20130551</a> | 网站备案 ：粤ICP备13049812 | 食品流通许可证 ：SP4403112014007826</p>
+        <p>食品流通许可证 ：SP1103021110002595</p>
+        <p>Copyright &copy; 2009-2016 深圳富金机网络科技有限公司.All Rights Reserved</p>
+        <div class="govico">
+            <img src="../css/img/govIcon.gif" alt="" />
+        </div>
+    </div>
+    <script src="../js/jquery-1.12.0.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/formTest.js"></script>
+</body>
+</html>

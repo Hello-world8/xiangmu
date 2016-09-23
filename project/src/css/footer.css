@@ -1,0 +1,92 @@
+.footer{
+	height: 334px;
+	margin-top: 20px;
+	overflow: hidden;
+}
+.footer .footer_top{
+	height: 48px;
+	background: url(img/sl_footer.png) no-repeat 0px 0px;
+}
+.footer .footer_center{
+	margin-top: 20px;
+	height: 152px;
+	overflow: hidden;
+}
+.footer_center .tel{
+	width: 298px;
+	float: left;
+	overflow: hidden;
+}
+.footer_center .tel1{
+	margin-top: 20px;
+}
+.footer_center .tel p{
+	width: 264px;
+	line-height: 26px;
+	margin-left: 34px;
+	color: #999;
+}
+.footer_center .tel p .fz{
+	font-size: 14px;
+	color: #000;
+}
+.footer_center .tel dl{
+	margin-top: 12px;
+}
+.footer_center .tel dt{
+	width: 54px;
+	float: left;
+	height: 54px;
+	margin-left: 40px;
+	background: url(img/sl_footer.png) no-repeat 0px -48px;
+}
+.footer_center .tel dd{
+	float: left;
+	width: 200px;
+	line-height: 26px;
+	color: #999;
+}
+.footer_center .tel dd span{
+	color: #ff6f67;
+}
+.footer_center .list{
+	float: left;
+	margin-top: 20px;
+	width: 902px;
+}
+.footer_center .list li{
+	float: left;
+	width: 178px;
+	height: 152px;
+	text-indent: 16px;
+	border-left: 1px solid #ddd;
+}
+.footer_center .list li .list1{
+	margin-top: 6px;
+}
+.footer_center .list li .list1 dd,.footer_center .list li .list1 dt{
+	line-height: 20px;
+	color: #ddd;
+}
+.footer_bottom{
+	height: 96px;
+	margin-top: 18px;
+}
+.footer_bottom .list3{
+	height: 24px;
+	overflow: hidden;
+}
+.footer_bottom .list3 li{
+	float: left;
+	margin: 6px 0px;
+	padding: 0px 10px;
+	border-right: 1px solid #999; 
+}
+.footer_bottom p{
+	text-indent: 10px;
+	line-height: 18px;
+	color: #999;
+}
+.footer_bottom p span{
+	display: inline-block;
+}

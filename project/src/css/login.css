@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+/*content*/
+#content #login{
+    width: 326px;
+    height: 350px;
+    border: 2px solid #eedfbb;
+    background: #fff;
+    position: absolute;
+    top: 44px;
+    left: 440px;
+}
+#login .them{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    background: url(img/head_top_bg.png) repeat-x;
+    text-indent: 10px;
+}
+#login .login-wrap{
+    width: 324px;
+    height: 320px;
+    border: 1px solid #c7012c;
+}
+.login-wrap p{
+    width: 294px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding-left: 10px;
+    line-height: 30px;
+    border: 1px solid #ccc;
+    background: #fafafa;
+}
+.login-wrap label{
+    display: block;
+    height: 24px;
+    padding-left: 30px;
+    margin-top: 10px;
+    line-height: 24px;
+}
+.login-wrap label input{
+    width: 220px;
+    height: 22px;
+    border: 1px solid #ccc;
+    text-indent: 8px;
+    outline: none;
+}
+.login-wrap label i{
+    letter-spacing: 12px;
+}
+.login-wrap .forget{
+    width: 60px;
+    height: 12px;
+    line-height: 12px;
+    display: block;
+    margin: 10px 0 10px 80px;
+}
+.login-wrap a{
+    color: #06f;
+}
+.login-wrap a:hover{
+    color: #f00;
+}
+.login-wrap dl{
+    width: 306px;
+    height: 102px;
+    margin: 0 6px 0 12px;
+    border-top: 1px dashed #ccc;
+}
+.login-wrap dl dt{
+    width: 74px;
+    height: 100%;
+    line-height: 32px;
+    text-align: center;
+    float: left;
+}
+.login-wrap dl dd{
+    height: 32px;
+    line-height: 32px;
+    float: left;
+}
+.login-wrap dl dd a{
+    height: 32px;
+    padding-left: 20px;
+    margin-right: 10px;
+    position: relative;
+}
+.login-wrap dl dd a i{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.login-wrap dl dd a.zhifubao i{
+    background: url(img/login_regin_ico.png) no-repeat -89px 0;
+}
+.login-wrap dl dd a.qq i{
+    background: url(img/login_regin_ico.png) no-repeat -82px -31px;
+}
+.login-wrap dl dd a.xinlang i{
+    background: url(img/login_regin_ico.png) no-repeat -135px -30px;
+}
+.login-wrap dl dd a.renren i{
+    background: url(img/login_regin_ico.png) no-repeat -40px -21px;
+}
+.login-wrap dl dd a.kaixin i{
+    background: url(img/login_regin_ico.png) no-repeat -173px -4px;
+}
+.login-wrap dl dd a.wangyi i{
+    background: url(img/login_regin_ico.png) no-repeat -119px -2px;
+}
+.login-wrap dl dd a.xunlei i{
+    background: url(img/login_regin_ico.png) no-repeat -147px 0;
+}
+.login-wrap dl dd a.one i{
+    background: url(img/login_regin_ico.png) no-repeat -42px -40px;
+}
+.login-wrap .logreg{
+    height: 40px;
+    line-height: 40px;
+}
+.login-wrap .sub{
+    width: 140px;
+    height: 40px;
+    margin-left: 80px;
+    border: 0;
+    outline: none;
+    background: url(img/login_regin_ico.png) no-repeat 0 -60px;
+    vertical-align: middle;
+}
+.login-wrap .sub:hover{
+    background: url(img/login_regin_ico.png) no-repeat 0 -100px;
+}
+.login-wrap .reg{
+    line-height: 40px;
+    margin-left: 16px;
+    vertical-align: middle;
+}

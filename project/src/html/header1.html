@@ -1,0 +1,91 @@
+<meta charset="UTF-8">
+<!-- 上部导航条 -->
+<div class="header_top f12">
+	<div class="wrap">
+		<p id="usname">您好，欢迎来到飞虎乐购！
+			<span><a href="#">安全登录</a></span>
+			还没有加入我们？
+			<span><a href="#">免费注册</a></span>
+		</p>
+		<ul>
+			<li class="web"><a href="#">我的账户<span></span></a>|
+				<dl>
+					<dt><a href="#">账户首页</a></dt>
+					<dd><a href="#">我的收藏</a></dd>
+					<dd><a href="#">我的订单</a></dd>
+				</dl>
+			</li>
+			<li class="web"><a href="#">网站导航<span></span></a>|
+				<dl>
+					<dt><a href="#">账户首页</a></dt>
+					<dd><a href="#">我的收藏</a></dd>
+					<dd><a href="#">我的订单</a></dd>
+				</dl>
+			</li>
+			<li><a class="add" href="#">加入收藏</a>|</li>
+			<li class="tel fwb"><em></em>400-883-6900</li>
+		</ul>
+	</div>
+</div>
+<!-- 中部搜索框 -->
+<div class="hearder_center">
+	<div class="wrap">
+		<a href="#"><div class="logo"></div></a>
+		<div class="search fwb">
+			<input type="text" name="" />
+			<button>搜索</button>
+		</div>
+	</div>
+</div>
+<!-- 导航条 -->
+<div class="wrap">
+	<div class="nav">
+		<p class="classify ">全部商品分类<span></span>
+		</p>
+		<div class="lottery fwb">臻鼎摸彩</div>
+		<ul class="list2">
+			<li>|<a href="#">首页</a></li>
+			<li>|<a href="#">奶粉专区</a></li>
+			<li>|<a href="#">飞虎团购</a></li>
+		</ul>
+		<img src="../css/img/new.gif" class="new" />
+		<img src="../css/img/hot.gif" class="hot" />
+		<p class="shopping_cart f12">
+			<a href="http://localhost:8080/html/cart.html">购物车(<span class="cart fwb">0</span>)
+				<span class="triangular"></span>
+			</a>
+			<a href="#" class="accounts">去结算</a>
+		</p>
+	</div>
+</div>
+<!-- 引入JS文件 -->
+
+<script>
+	//header_top
+	$('.header_top .web').on('mouseover',function(){
+		$(this).children('dl').stop().show();
+		$(this).find('span').css({
+			'background':'url(../css/img/tel.png) 0px -6px'
+		});
+		$(this).css({
+			'background':'#fff',
+		});
+	}).on('mouseout',function(){
+		$(this).children('dl').stop().hide();
+		$(this).find('span').css({
+			'background':'url(../css/img/tel.png) 0px 0px'
+		});
+		$(this).css({
+			'background':'#eaeaea',
+		});
+	})
+
+
+
+	//获取cookie登录
+	var name =getCookie('username');
+	console.log(name);
+	if (name){
+		$('#usname').html('您好，'+'<span><a href="#">'+name+"先生</a></span>"+",欢迎来到飞虎乐购！");
+	} 
+</script>

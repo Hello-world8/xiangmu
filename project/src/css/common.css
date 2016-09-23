@@ -1,0 +1,26 @@
+html,body,div,p,ul,li,h1,h2,h3,h4,h5,h6,em,img,i,dl,dt,dd,a,img{padding: 0; margin: 0;}
+img{ border: 0; _display:block; }
+em,i{ font-style:normal;} 
+.wrap{ width:1200px; margin:0 auto;}
+ul,li{ list-style:none;}
+a{ text-decoration:none;}
+h1,h2,h3,h4,h5,h6{ font-weight:normal;}
+
+/*----字体-----*/
+.f12{ font-size: 12px; }
+.f14{font-size: 14px;}
+.f16{ font-size: 16px; }
+.f18{ font-size: 18px; }
+.f22{ font-size: 22px; }
+.fwb{ font-weight: bold; }
+.f-pr { position: relative; }
+.f-oh { overflow: hidden; }
+/*----margin-----*/
+.mrn{
+	margin-right: 0px !important;
+}
+.mg{
+	padding: 0px 24px !important;
+}
+/*------遮罩层----*/
+.overlay{position:fixed;left:0;top:0;right:0;bottom:0;background-color:#000;opacity:0.5;}

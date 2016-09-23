@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>飞虎乐购-在线销售IT、数码、手机，让你找得容易，买得放心！</title>
+    <link rel="shortcut icon" href="../css/favicon.ico" />
+    <link rel="stylesheet" href="../css/log_reg_common.css" />
+    <link rel="stylesheet" href="../css/login.css" />
+</head>
+<body>
+    <div id="header">
+        <div class="wrap">
+            <div class="left fl">您好,欢迎来到飞虎乐购!<a href="#">安全登录</a>还没加入我们？<a href="register.html">免费注册</a></div>
+            <div class="right fr">
+                <div class="adm fl menu">
+                    <a href="#">我的账户</a>
+                    <i></i>
+                    <ul class="menuShow">
+                        <li><a href="#">我的账户</a></li>
+                        <li><a href="#">我的收藏</a></li>
+                        <li><a href="#">我的订单</a></li>
+                    </ul>
+                </div>
+                <div class="help fl">
+                    <a href="#">帮助中心</a>
+                    <span>|</span>
+                </div>
+                <div class="exp fl">
+                    <i></i>
+                    <a href="#">网站体验反馈</a>
+                </div>
+                <div class="tel fl"><i></i>400 833 6900</div>
+            </div>
+        </div>
+    </div>
+    <div id="content" class="wrap">
+        <h1>
+            <a href="../index.html"><img src="../css/img/login_logo.jpg" alt="" /></a>
+        </h1>
+        <form action="http://localhost:8080/index.html" name="login" id="login">
+            <h3 class="them f14">用户登录</h3>
+            <div class="login-wrap">
+                <p>欢迎您登陆飞虎乐购，享受您的购物之旅。</p>
+                <label>
+                    用户名：<input type="text" name="uesename" />
+                </label>
+                <label>
+                    <i>密</i>码：<input type="password" name="password" />
+                </label>
+                <a href="#" class="forget">忘记密码?</a>
+                <dl class="uni-login">
+                   <dt>联合登录 : </dt>
+                   <dd><a href="#" class="zhifubao"><i></i>支付宝快捷登录</a></dd>
+                   <dd><a href="#" class="qq"><i></i>QQ</a></dd>
+                   <dd><a href="#" class="xinlang"><i></i>新浪</a></dd>
+                   <dd><a href="#" class="renren"><i></i>人人网</a></dd>
+                   <dd><a href="#" class="kaixin"><i></i>开心网</a></dd>
+                   <dd><a href="#" class="wangyi"><i></i>网易</a></dd>
+                   <dd><a href="#" class="xunlei"><i></i>迅雷</a></dd>
+                   <dd><a href="#" class="one"><i></i>139邮箱</a></dd>
+                </dl>
+                <div class="logreg">
+                    <input type="submit" value="" class="sub" id="sub" />
+                    <a href="register.html" class="reg">免费注册</a>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div id="footer" class="wrap">
+        <div>
+            <a class="first" href="#">常见问题</a>|<a href="#">法律说明</a>|<a href="#">联系我们</a>
+        </div>
+        <p>增值电信业务经营许可证 ：<a href="#">粤B2-20130551</a> | 网站备案 ：粤ICP备13049812 | 食品流通许可证 ：SP4403112014007826</p>
+        <p>食品流通许可证 ：SP1103021110002595</p>
+        <p>Copyright &copy; 2009-2016 深圳富金机网络科技有限公司.All Rights Reserved</p>
+        <div class="govico">
+            <img src="../css/img/govIcon.gif" alt="" />
+        </div>
+    </div>
+    <script src="../js/jquery-1.12.0.js"></script>
+    <script src="../js/common.js"></script>
+     <script src="../js/cookie.js"></script>
+    <script>
+        $(function(){
+            $('#sub').click(function(){
+                if($('input[type=text]').val() == '' || $('input[type=password]').val() == ''){
+                    alert('用户名或密码不能为空')
+                    return false;
+                }else{
+                    // $('input[type=text]').empty();
+                    //  $('input[type=password]').empty();
+
+                     $('input[type=text]').val("");
+                     $('input[type=password]').val("");
+                 var username = getCookie('username');
+                 var password= getCookie('password')
+                 $('input[type=text]').val(username);
+                 $('input[type=password]').val(password);
+                $(this).submit();
+                }
+            })
+        })
+    </script>
+</body>
+</html>
